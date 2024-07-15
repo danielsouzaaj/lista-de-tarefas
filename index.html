@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="./styles.css">
-        <title>Lista de Tarefas</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Lista de Tarefas</title>
+  </head>
 
-    <body>
-        <script src="./script.js"></script>
-    </body>
+  <body>
+    <main class="wrapper">
+      <div class="container">
+        <header class="header">
+          <h2 class="title title-1">Adicionar uma tarefa</h2>
+          <form class="form">
+            <input
+              type="text"
+              id="text-form"
+              placeholder="Descreva a tarefa"
+              required
+            />
+            <input type="submit" value="Criar tarefa" />
+          </form>
+        </header>
+
+        <section class="list-container">
+          <h2 class="title title-2">Quadro de tarefas</h2>
+
+          <ul class="task-list"></ul>
+        </section>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>
